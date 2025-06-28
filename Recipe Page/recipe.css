@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(30, 18%, 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    padding: 40px;
+    color: hsl(30, 10%, 34%);
+    word-spacing: 2px;
+}
+
+h1,
+h3 {
+    font-family: 'Young Serif', serif;
+    color: hsl(14, 45%, 36%);
+
+}
+
+span {
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-section li::before,
+.preparation-section li::before {
+    content: "•";
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+li {
+    margin-block: 10px;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 26px;
+    background-color: white;
+    padding: 20px
+}
+
+.banner {
+    height: 30%;
+    font-size: 15px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.preparation-section {
+    background-color: hsl(30, 54%, 90%);
+    padding: 10px 40px;
+    border-radius: 6px;
+}
+
+.preparation-section h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-section li::before {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients-section {
+    padding: 10px;
+}
+
+.ingredients-section li::before {
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions-section {
+    padding: 10px;
+}
+
+.instructions-section ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.nutrition-section {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr td:last-child {
+    font-weight: 900;
+    color: hsl(14, 45%, 36%);
+}
+
+table tr:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
