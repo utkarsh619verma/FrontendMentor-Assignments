@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="newsletter.css">
+</head>
+<style>
+    .main-container {
+        padding: 50px;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: black;
+        margin: 0px;
+        margin: 15px 0px;
+    }
+
+    p {
+        margin: 0px;
+        font-weight: 400;
+        margin: 0px 0px 40px 0px;
+    }
+
+    @media (max-width:490px) {
+        .main-container {
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding: 50px 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+</style>
+<div class="main-container" style="flex-direction: column;">
+    <div>
+        <img width="50px" src="./newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg" alt="">
+        <h1>Thanks for <br /> subscribing!</h1>
+        <p class="confirmation-email"></p>
+    </div>
+    <button class="confirm-button" type="button">Dismiss message</button>
+</div>
+</body>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get('email');
+    if (email) {
+        let p = document.querySelector(".confirmation-email");
+        p.innerHTML = `A confirmation email has been sent to  <span style='font-weight:900'> ${email} </span> .Please open it and click  the button inside to confirm your subscription`;
+    }
+    const confirmButton = document.querySelector(".confirm-button");
+    confirmButton.addEventListener('click', () => window.location.href = './index.html')
+</script>
+
+</html>
