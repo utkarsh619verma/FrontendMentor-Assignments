@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: hsl(226, 43%, 10%);
     height: 100vh;
@@ -15,7 +19,7 @@ h1 {
 
 .main-container {
     display: grid;
-    grid-template-columns: repeat(4, 15vw);
+    grid-template-columns: repeat(4, auto);
     gap: 2rem;
 }
 
@@ -24,7 +28,6 @@ h1 {
     display: grid;
     grid-template-rows: 20% 80%;
     border-radius: 13px;
-    max-height: 280px;
     color: white;
 }
 
@@ -36,29 +39,28 @@ h1 {
 
 .footer {
     color: hsl(236, 100%, 87%);
-    padding: 0.5rem 2rem;
-    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     font-weight: 800;
+    font-size: 1.6rem;
 }
 
 .curr_time {
-    font-size: 2rem;
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 4.5rem;
     padding: 0 2rem;
 }
 
 .options-button {
     background: none;
     border: none;
-    width: 2rem;
 }
 
 
@@ -83,8 +85,12 @@ p {
     padding: 0.5rem;
 }
 
+.profile p {
+    font-size: 1.4rem;
+}
+
 .profile h1 {
-    font-size: 2.7rem;
+    font-size: 4rem;
 }
 
 .profile img {
@@ -96,12 +102,62 @@ p {
 .schedule-card {
     grid-row: 2;
     color: hsl(235, 45%, 61%);
+    font-size: 1.8rem;
 }
 
 .schedule-card ul {
     list-style-type: none;
+    padding-left: 1rem;
 }
 
 .schedule-card li {
     padding: 1rem;
 }
+
+/* @media (max-width:1253px) {
+    .profile p {
+        font-size: 1.2rem;
+    }
+
+    .profile h1 {
+        font-size: 3rem;
+    }
+
+    .schedule-card {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        font-size: 1.15rem;
+    }
+
+    .curr_time {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:1020px) {
+
+    .profile h1 {
+        font-size: 2.5rem;
+    }
+
+    .schedule-card {
+        font-size: 1.4rem;
+    }
+
+    .curr_time {
+        font-size: 2.5rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:910px) {
+    .profile h1 {
+        font-size: 2rem;
+    }
+
+} */
