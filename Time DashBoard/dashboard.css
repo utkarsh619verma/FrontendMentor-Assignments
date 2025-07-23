@@ -17,10 +17,13 @@ p {
 }
 
 h1 {
-    font-size: clamp(1.6rem, 4.6vw + 1rem, 5rem);
+    font-size: clamp(1.6rem, 4.6vw + 1rem, 6rem);
     margin: 0;
 }
 
+.content h1 {
+    font-size: clamp(1.6rem, 4.6vw + 1rem, 4.5rem);
+}
 
 .main-container {
     display: grid;
